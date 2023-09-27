@@ -1,0 +1,56 @@
+@import "../../styles/global-variables";
+
+.home {
+    .greetings {
+        font-size: 14px;
+        margin-top: 7px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        
+        h3 {
+            text-shadow: 5px 0 10px rgba(rgb(240, 240, 240), 0.7);
+            display: none;
+            color: gray;
+
+
+            @include tablet {
+                display: block;
+            }
+        }
+    }
+    .ad {
+        margin-bottom: 20px;
+    }
+    
+    .todayLiveMatches {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: none;
+        }
+
+
+    }
+    
+    .todayInfo {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+
+        @include tablet {
+            grid-template-columns: none;
+        }
+        
+        @include mobile {
+            grid-template-columns: none;
+        }
+    }
+
+}

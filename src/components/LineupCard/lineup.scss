@@ -1,0 +1,38 @@
+@import '../../styles//_global-variables.scss';
+
+.lineupCard {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 13px rgba(0,0,0,.1);
+
+
+    .lineupCardTitle {
+        display: flex;
+        // border-bottom: 1px solid #f1f1f1;
+        padding: 10px 5px;
+        justify-content: space-between;
+        align-items: center;        
+        font-weight: 600;
+    }
+    
+    .lineupCardBody {
+        padding: 10px 5px;
+        position: relative;
+        
+        // .field {
+        //     transform: rotate(90deg);
+        //     transform-origin: bottom;
+        //     top: 30px;
+        // }
+
+        .pitch {
+            background-color: $main-color !important;
+        }
+    }
+
+
+
+}

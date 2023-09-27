@@ -1,0 +1,95 @@
+@import "../../styles/global-variables";
+
+.oddstable {
+  margin-bottom: 20px;
+    border-radius: 1.5%;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    background: white;
+    h4{
+        display: grid;
+        padding: 5px;
+        padding-left: 20px;
+        width: fit-content;
+        place-items: center;
+        background:  linear-gradient(45deg, $background-color,  Zrgb(255, 255, 255));
+        border-radius: 5px;
+        margin-bottom: 4px;
+        font-weight: bold ;
+        font-size: 15px;
+        color: rgb(22, 22, 22);
+    }}
+    h1{
+      
+      font-size: 30px;
+      color: rgb(22, 22, 22);
+  }
+  h2{
+      
+    font-size: 15px;
+    color: rgb(22, 22, 22);
+}
+.centralizar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  
+  .lightBG .card-body {
+      background-color: var(--qatar);
+      color: var(--offWhite);
+      text-align: center;
+      transition: all 0.5s linear;
+    }
+  
+    .lightBG .card {
+      background-color: var(--qatar);
+      text-align: center !important;
+      justify-content: center;
+      width: 500px;
+      transition: all 0.5s linear;
+    }
+  
+    .cardGrupos1 {
+      background-image: linear-gradient(to right, blanchedalmond, #d7c6ad);
+      padding-left: 1rem;
+      /* 16px */
+      padding-right: 1rem;
+      border-radius: 0.75rem;
+      padding-top: 0.5rem;
+      /* 8px */
+      padding-bottom: 0.5rem;
+      transition: all .4s linear;
+      /* max-height: 70%; */
+    }
+    
+    .cardGrupos1:hover {
+      scale: 1.02;
+      transition: all .4s linear;
+    }
+    
+    .cardGrupos2{
+      background-image: linear-gradient(to right, var(--qatarEscuro), var(--qatar), var(--qatarClaro));
+      padding-left: 1rem;
+      /* 16px */
+      padding-right: 1rem;
+      border-radius: 0.75rem;
+      padding-top: 0.5rem;
+      /* 8px */
+      padding-bottom: 0.5rem;
+      transition: all .4s linear;
+      /* max-height: 70%; */
+    }
+    
+    .cardGrupos2:hover {
+      scale: 1.02;
+      transition: all .4s linear;
+    }  
+    .Info{
+        text-align: center;
+    }
+    .button{
+      margin-bottom: 15px;
+      margin-left: -1%;
+    }

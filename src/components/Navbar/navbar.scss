@@ -1,0 +1,264 @@
+@import "../../styles/global-variables";
+
+.navbar {
+    height: 60px;
+    // box-shadow: 0 0 5px #eee;
+    background: white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: gray;
+    box-shadow: 5px -12px 12px -12px black;
+    width: 100%;
+
+    .wrapper {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+
+        .wrapperGreeting {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // gap: 10px;
+
+            .icon {
+                display: none;
+                color: rgb(8, 8, 8);
+                
+                @include tablet {
+                    display: block;
+                }
+            }
+
+
+            h3 {
+                text-shadow: 5px 0 10px rgba(rgb(240, 240, 240), 0.7);
+                // color: #000;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+            
+            // .logo {
+            //     height: 100%;
+            //     // padding: 10px;
+            //     font-weight: bold;
+            //     font-size: 1.8em;
+            //     display: flex;
+            //     align-items: center;
+            //     color: $main-color;
+            //     cursor: pointer;
+            //     letter-spacing: 2px;
+    
+            //     .logoBall {
+            //         color: #bebcbc;
+            //         font-size: 0.7em;
+            //     }
+    
+            //     .logoSpan {
+            //         font-weight: lighter;
+            //         color: $secondary_color;
+            //     }
+            // }
+
+        }        
+        .personal {
+            display: flex;
+            gap: 15px;
+            
+            .search {
+                display: flex;
+                border: 1px solid #f1f1f1;
+                border-radius: 5px;
+                align-items: center;
+                padding: 5px 10px;
+                position: relative;
+
+                .searchCard {
+                    display: none;
+                }
+                
+                
+                input {
+                    border: none;
+                    height: 25px;
+                    outline: none;
+                    
+                    @include tablet {
+                        display: none;
+                    }
+                }
+    
+                @include tablet {
+                    border: none;
+
+                    .searchCard {
+                        display: flex;
+                        position: absolute;
+                        top: 60px;
+                        padding: 10px;
+                        border-radius: 10px;
+                        box-shadow: 3px 3px 17px #ccc;
+                        right: 0;
+                        z-index: 2;
+                        transition: all 0.8s ease-in-out;
+                        background-color: #fff;
+
+                        input {
+                            display: block;
+                            border: 1px solid #f7f7f7;
+                            border-radius: 5px;
+                        }
+
+                        .icon {
+                            padding: 5px;
+                            background-color: #eee;
+                        }
+                    }
+                    
+                }
+
+
+
+                
+            }
+
+
+
+            .profile {
+                display: flex;
+                gap: 15px;
+
+                .iconSpan {
+                    display: grid;
+                    place-items: center;
+                    position: relative;
+
+                    .icon {
+                        color: gray;
+                        cursor: pointer;
+                    }
+                    
+                    sup {
+                        position: absolute;
+                        right: 0;
+                        top: 7px;
+
+                        .icon {
+                            color: red;
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                .imgBox {
+                    cursor: pointer;
+                    .img {
+                        border-radius: 5px;
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                    }
+                }
+                
+                .dets {
+                    cursor: pointer;
+                    @include tablet {
+                        display: none;
+                    }
+
+                    h4 {
+                        font-size: 14px;
+                        color: gray;
+                    }
+
+                    p {
+                        letter-spacing: 1px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .profileCard {
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 250px;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 3px 3px 17px #ccc;
+                background: white;
+                transition: all 0.8s ease-in-out;
+                font-size: 18px;
+                z-index: 2;
+                
+                .profile {
+                    display: flex;
+                    gap: 15px;
+
+                    .imgBox {
+                        cursor: pointer;
+                        .img {
+                            border-radius: 5px;
+                            width: 70px;
+                            height: 70px;
+                            object-fit: cover;
+                        }
+                    }
+                    
+                    .info {
+                        cursor: pointer; 
+                        color: rgb(8, 8, 8);
+                        font-weight: 600;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        span{
+                            display: flex;
+                            align-items: center;
+                            
+                            &:nth-child(2) {
+                            color: rgb(0, 148, 0);
+                            letter-spacing: 1px;
+                        }}
+                    }
+                }
+                hr {
+                    background-image: linear-gradient(to right, $main-color 0%, $secondary_color 51%, $main-color 100%);
+                    // background-color:  rgba($color: #550065, $alpha: 0.7);
+                    border: $main-color;
+                    height: 4px;
+                    border-radius: 6px;
+                    width: 100%;
+                }
+        
+                .otherSources {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    margin-top: 15px;
+                    
+                    button {
+                        display: flex;
+                        font-size: 14px;
+                        justify-content: flex-start;
+                        color: $main-color;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            background: rgba($color: $main-color, $alpha: 0.04);
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}

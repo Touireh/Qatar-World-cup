@@ -1,0 +1,74 @@
+@import "./global-variables";
+
+
+
+.App {
+  display: flex;
+  width: 100%;
+  // background: rgb(36, 36, 36);
+  // background: white; // white-bg
+  background: rgb(250, 250, 250); // white-bg
+
+  // .sidebar {
+
+  //   @include tablet {
+  //     display: none;
+  //   }
+  // }
+  
+  .AppContainer {
+    flex: 4.3;
+    position: relative;
+    
+    @include tablet {
+      flex: none;
+      width: 100%;
+    }
+    // @include mobile {
+    //   flex: 1;
+    // }
+
+    .main {
+      padding: 6px 20px;
+
+      @include tablet {
+        padding: 10px;
+      }
+    }
+
+    .footer {
+      margin-top: 20px;
+      // height: 70px;
+      background-color: rgb(218, 218, 218);
+      color: gray;
+      display: grid;
+      place-items: center;
+      padding: 5px;
+      hr {
+        width: 100%;
+      }
+
+      p {
+        padding: 10px;
+        text-align: center;
+
+        &:nth-child(1) {
+          display: flex;
+          gap: 10px;
+        }
+      }
+  }
+
+    
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  &.dark {
+    background: black;
+  }
+
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+@import '../../styles/global-variables';
+
+// $rccs-default-background: linear-gradient(45deg, $main-color, $secondary_color);
+$rccs-unknown-background: linear-gradient(45deg, $main-color, $secondary_color);
+// $rccs-unknown-background: url('../../bgc.jpg');
+
+@import 'react-credit-cards-2/lib/styles.scss';
+.app-header{
+  text-align: center;
+  padding: 20px;
+}
+.header1{
+  font-family: 'Azeret Mono', monospace;
+  font-size: 30px;
+}
+.app-body{
+  padding: 20px;
+  height: auto;
+  text-align: center;
+}
+.ad {
+  margin-bottom: 20px;
+}
+.language-select{
+  font-size: 14px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(31, 30, 30);
+  margin-top: 20px;
+}
+TextArea{
+  font-size: 14px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(31, 30, 30);
+  margin-top: 20px;
+}
+button {
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  background-color: $main-color;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  transition: .3s;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 41px;
+  box-shadow: 0 7px 10px rgba(0,0,0,.1);
+  &:hover {
+      background-color: $secondary_color_shade;
+      animation-name: wobble;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 1;
+  }
+}

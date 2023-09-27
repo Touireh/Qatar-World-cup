@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.main-container {
+  
+  background-color: #ffffff;
+    padding: 30px 22px;
+    width: 80rem;
+    height:500px;
+  
+
+    /*max-width: em;*/
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 79%;
+    margin-left: 70%;
+    border-radius: 0.6em;
+    box-shadow: 0 20px 30px rgba(213, 209, 209, 0.4);
+    border: 1px solid #c0bfd2;
+    border-radius: 2.3em;
+}
+
+.start-screen {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+/*.next_button{
+  font-size: 1em;
+    margin-top: 1.5em;
+    background-color: #8754ff;
+    color: #ffffff;
+    padding: 0.7em 1.8em;
+    border-radius: 0.3em;
+    float: right;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+}*/
+
+.content {
+  width: 755px;
+  height: 300px;
+}
+
+.title {
+  text-align: center;
+}
+
+.msg {
+  display: flex;
+}
+
+.msg p {
+  margin-left:-70px;
+  margin-top: 20px;
+}
+
+.msg button {
+  width: 50%;
+}
+
+.score-box {
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 150%;
+ margin-top: 980px;
+ flex-flow: column;
+  color: black;
+}
+
+#flag, #answersButtons {
+  width: 50%;
+  height: 100%;
+  float: left;
+  
+  box-sizing: border-box;
+  border: 1px solid #c0bfd2;
+  border-radius: 0.3em;
+  display: flex;    
+}
+
+#header, #footer {
+  height: 75px;
+}
+
+#header {
+  margin-bottom: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.6em;
+    border-bottom: 0.1em solid #c0bfd2;
+}
+
+#flag {
+  justify-content: center;
+  align-items: center;  
+}
+
+#answersButtons {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.9em;
+  text-align: left;
+  outline: none;
+  border: 1px solid #c0bfd2;
+  border-radius: 0.3em;
+}
+
+#answersButtons > button {
+  width: 55%;
+  margin-left: 2px;
+  height: 19%;
+  background:rgb(218, 218, 218) ;
+  border: 1px solid #c0bfd2;
+  border-radius:10%;
+}
+
+#flagImage {
+  width: 250px;
+  height: 152px;
+  background-image: url(./img/flags.jpg);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+#continents{
+  padding-top: 4%;
+  padding-bottom:4%;
+  font-family: ' Libre Baskerville'  ;
+  font-size: 20px;
+}
+#continents > input {
+  margin-right: 10px;
+  
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#start {
+  margin: 15px;
+  width: 30%;
+  height: 12%;
+  font-size: 18px;
+  padding: 0.5em 1.8em;
+  border-radius: 0.2em;
+  
+}
+
+
